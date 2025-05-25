@@ -1,7 +1,8 @@
 :root {
-  --text: #111;
-  --background: #fff;
-  --accent: #888;
+  --text: #1f2d3d;
+  --background: #f9fcff;
+  --accent: #007acc;
+  --card: #e9f4fb;
   --max-width: 900px;
   --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -23,8 +24,8 @@ body {
 header {
   padding: 4rem 2rem 2rem;
   text-align: center;
-  background: #f9f9f9;
-  border-bottom: 1px solid #e0e0e0;
+  background: #e2f0fb;
+  border-bottom: 1px solid #cce6f6;
 }
 
 header h1 {
@@ -56,6 +57,7 @@ nav a:hover {
 section h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--accent);
 }
 
 .projects-grid {
@@ -65,8 +67,8 @@ section h2 {
 }
 
 .project {
-  background: #fafafa;
-  border: 1px solid #eee;
+  background: var(--card);
+  border: 1px solid #d2eaf7;
   padding: 1.5rem;
   border-radius: 8px;
   transition: transform 0.2s ease;
@@ -82,17 +84,17 @@ ul {
 }
 
 ul li a {
-  color: var(--text);
+  color: var(--accent);
   text-decoration: underline;
 }
 
 footer {
   text-align: center;
   padding: 2rem 0;
-  border-top: 1px solid #e0e0e0;
+  border-top: 1px solid #dbeffc;
   margin-top: 3rem;
   font-size: 0.9rem;
-  color: var(--accent);
+  color: #5f7c9a;
 }
 
 /* Fade-in animation */
@@ -105,4 +107,31 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.education-entry {
+  margin-bottom: 2rem;
+}
+
+.education-entry .date {
+  display: block;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.skills-list,
+.certifications-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
+.skills-list li,
+.certifications-list li {
+  margin-bottom: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
