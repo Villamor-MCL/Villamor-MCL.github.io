@@ -3,53 +3,58 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
+  <title>Gabriel Villamor | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Gabriel Edward Owel Villamor</h1>
-    <p>Web Developer | UI/UX Designer </p>
+    <div class="container">
+      <h1>Gabriel Edward Owel Villamor</h1>
+      <p>Web Developer & UI/UX Designer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <section id="about">
+  <section id="about" class="container fade-in">
     <h2>About Me</h2>
-    <p>Hello! I'm Gabriel, a passionate web developer focusing in building responsive and engaging websites. I love solving problems and creating user-friendly interfaces.</p>
+    <p>Hello! I'm Gabriel, a passionate web developer focused on building responsive and engaging websites. I love solving problems and creating user-friendly interfaces.</p>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="container fade-in">
     <h2>Projects</h2>
-    <div class="projects">
-      <div class="project fade-in">
+    <div class="projects-grid">
+      <div class="project">
         <h3>Portfolio Website</h3>
         <p>A personal portfolio website to showcase my projects and skills using HTML, CSS, and JavaScript.</p>
       </div>
-      <div class="project fade-in">
+      <div class="project">
         <h3>Calorie Intake Tracker App</h3>
-        <p>A calorie intake tracker app that tracks the user's daily calorie intake based on the user selected food/dishes they ate during the day. The app will show the accumulated calorie for the day and will also show the user a daily recommended calorie limit based on the height and weight they provided in their profile.</p>
+        <p>Tracks daily calorie intake based on user-selected food. Displays total and recommended daily limit based on height and weight.</p>
       </div>
-      <div class="project fade-in">
-        <h3>BMI capture using User Image</h3>
-        <p>A Kiosk capable of capture the height and weight of the user using a captured image and gives health recommendations using AI. It includes an AI chatbot for more personalized questions.</p>
+      <div class="project">
+        <h3>BMI Capture Using User Image</h3>
+        <p>Kiosk app that captures height/weight via image and provides AI-driven health advice, including a chatbot.</p>
       </div>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" class="container fade-in">
     <h2>Contact</h2>
-    <p>Feel free to reach out for collaboration!</p>
-    <p>Email: gabrielvillamor31@gmail.com</p>
-    <p>LinkedIn: linkedin.com/in/gabriel-edward-villamor</p>
+    <p>Feel free to reach out for collaboration or just to say hello!</p>
+    <ul>
+      <li>Email: <a href="mailto:gabrielvillamor31@gmail.com">gabrielvillamor31@gmail.com</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/gabriel-edward-villamor" target="_blank">gabriel-edward-villamor</a></li>
+    </ul>
   </section>
 
   <footer>
-    <p>&copy; 2025 Gabriel Edward Owel Villamor. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2025 Gabriel Edward Owel Villamor</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

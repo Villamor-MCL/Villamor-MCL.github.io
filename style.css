@@ -1,67 +1,107 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --text: #111;
+  --background: #fff;
+  --accent: #888;
+  --max-width: 900px;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--font);
+  background: var(--background);
+  color: var(--text);
   line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+  margin: 0;
 }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
 header {
-  background: #333;
-  color: #fff;
-  padding: 2rem 0;
+  padding: 4rem 2rem 2rem;
   text-align: center;
+  background: #f9f9f9;
+  border-bottom: 1px solid #e0e0e0;
 }
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: var(--accent);
+}
+
 nav {
-  background: #444;
+  margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
 }
+
 nav a {
-  color: white;
   text-decoration: none;
+  color: var(--text);
   font-weight: bold;
 }
+
 nav a:hover {
+  color: var(--accent);
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project {
+  background: #fafafa;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li a {
+  color: var(--text);
   text-decoration: underline;
 }
-section {
-  padding: 4rem 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-}
-.project {
-  background: white;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-.project:hover {
-  transform: scale(1.05);
-}
+
 footer {
-  background: #333;
-  color: white;
   text-align: center;
   padding: 2rem 0;
-  margin-top: 4rem;
+  border-top: 1px solid #e0e0e0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--accent);
 }
+
+/* Fade-in animation */
 .fade-in {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 0.8s ease, transform 0.8s ease;
 }
+
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
