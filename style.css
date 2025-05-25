@@ -135,3 +135,9 @@ footer {
 html {
   scroll-behavior: smooth;
 }
+
+.education-entry .note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+}
